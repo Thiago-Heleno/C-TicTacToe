@@ -124,9 +124,9 @@ int main(){
     winner = checkWinner(game);
     if(winner != 0) break;
     
-    printf("Input (X) (Y): ");
     while (acceptInput == 0)
     {
+      printf("Input (X) (Y): ");
       scanf("%d %d", &chosenX, &chosenY);
       if(game[chosenX][chosenY] == 0){
         game[chosenX][chosenY] = activePlayer;
@@ -143,6 +143,6 @@ int main(){
   }
   
   printf("\n\n\nPlayer %d Wins!", winner);
-
+ 
   return 0;
 }
